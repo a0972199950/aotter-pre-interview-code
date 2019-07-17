@@ -1,0 +1,147 @@
+/*********** BANNER ***********/
+
+.ad-banner {
+    width: 100%;
+    height: 100%;
+    border: 1px rgb(202, 202, 202) solid;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+}
+
+.ad-banner__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ad-banner__content {
+    background: #E9E9ED;
+    padding: .625rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px rgb(202, 202, 202) solid;
+}
+
+.ad-banner__domain {
+    color: #5D646E;
+    margin: 0;
+    font-weight: 700;
+}
+
+.ad-banner__title {
+    margin: 0;
+    font-weight: 900;
+    color: black;
+}
+
+.ad-banner__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, -50%);
+    border: 1px rgb(202, 202, 202) solid;
+}
+
+
+
+
+/*********** VIDEO ***********/
+
+.ad-video {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.ad-video__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ad-video__title {
+    color: white;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.6rem;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7)0%, rgba(0, 0, 0, 0)100%);
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0.7)0%, rgba(0, 0, 0, 0)100%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.7)0%, rgba(0, 0, 0, 0)100%);
+    background: -o-linear-gradient(180deg, rgba(0, 0, 0, 0.7)0%, rgba(0, 0, 0, 0)100%);
+}
+
+.ad-video__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6rem;
+    height: 6rem;
+    border: 5px white solid;
+    border-radius: 100%;
+    background: rgba(107, 107, 107, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-video__icon {
+    width: 3rem;
+    height: 3rem;
+    transform: translate(4px);
+}
+
+.ad-video__social {
+    color: white;
+    display: flex;
+    font-size: 1.6rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1rem .5rem;
+    font-weight: 700;
+}
+
+.ad-video__social div {
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-video__social svg {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+}
+
+.ad-video__iframe {
+    width: 100%;
+}
+
+.ad-video__img {
+    display: block;
+    width: 100%;
+}
