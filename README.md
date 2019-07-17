@@ -2,12 +2,12 @@
 > 本文檔內範例皆以Vue做解說
 
 ## 安裝
-- 下載壓縮包，內含兩個檔案 `ads.js` 及 `ads.css`。將其解壓縮後放置在專案目錄下
+- 下載壓縮包，將其解壓縮後放置在專案目錄下
 
-- 接下來，在含有廣告的組件中引入 `ads.css`
+- 接下來，在含有廣告的組件中引入 `ads.min.css`
 ```
 <style>    
-    @import url("../sdk/ads.css");
+    @import url("[你的檔案路徑]/ads.min.css");
 
     ...其他的css樣式
 </style>
@@ -19,14 +19,14 @@
 
 import Vue from 'vue'
 import App from './App.vue'
-import "[你的檔案路徑]/ads/ads.css"
+import "[你的檔案路徑]/ads.min.css"
 ```
 
 
-- 接下來在需要的地方引入 `ads.js` 文件。 `ads.js` 使用default export，因此你可以自由命名變數的名稱
+- 接下來在需要的地方引入 `ads.min.js` 文件。 `ads.min.js` 使用default export，因此你可以自由命名變數的名稱
 ```
 <script>
-    import ads from "[你的檔案路徑]/ads/ads.js";
+    import ads from "[你的檔案路徑]/ads.min.js";
     export default {
 
     }
@@ -65,7 +65,7 @@ import "[你的檔案路徑]/ads/ads.css"
 </template>
 
 <script>
-    import ads from "[你的檔案路徑]/ads/ads.js";
+    import ads from "[你的檔案路徑]/ads.min.js";
     export default {
         created(){
             const myAd = ads("my-ad-id");
@@ -130,7 +130,7 @@ myAd.load();
 </template>
 
 <script>
-    import ads from "[你的檔案路徑]/ads/ads.js";
+    import ads from "[你的檔案路徑]/ads.min.js";
     export default {
         data(){
             return {
@@ -176,7 +176,7 @@ myAd.load();
 </template>
 
 <script>
-    import ads from "[你的檔案路徑]/ads/ads.js";
+    import ads from "[你的檔案路徑]/ads.min.js";
     export default {
         mounted(){
             ads("my-ad-id", "BANNER")
@@ -214,6 +214,7 @@ Returns new Ad Object
 ### .listen()
 
 Returns Ad Object
+
 | 參數       | 類型   | 說明                                                                              |
 |-----------|--------|-----------------------------------------------------------------------------------|
 | 事件監聽器 | Object | 可自定義生命週期函數。支援的事件有`on-ad-loaded`, `on-ad-failed`, `on-ad-impression` |
@@ -228,6 +229,7 @@ Returns Ad Object
 ### .load()
 
 No return value
+
 | 參數 | 類型 | 說明 |
 |------|-----|------|
 | 無   | -   | -    |
